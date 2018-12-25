@@ -36,14 +36,14 @@ public class Homework1 {
         //задание 5
 
         System.out.println("Сейчас узнаем, положительное число или отрицательное!");
-        System.out.println("Введите число: ");
+        System.out.print("Введите число: ");
         int x = scan.nextInt();
         porn(x);
 
         //задание 6
 
         System.out.println("Сейчас узнаем, правда ли ваше число отрицательное!");
-        System.out.println("Введите число: ");
+        System.out.print("Введите число: ");
         int y = scan.nextInt();
         nornot(y);
         System.out.println(nornot(y));
@@ -51,13 +51,13 @@ public class Homework1 {
         //задание 7
 
         System.out.println("Как тебя зовут?");
-        String yourname = scan.nextLine();
-        name(yourname);
+        String username = scan.nextLine();
+        name(username);
 
         //задание 8
 
         System.out.println("Сейчас узнаем, является ли год високосным!");
-        System.out.println("Введи год:");
+        System.out.print("Введи год: ");
         int year = scan.nextInt();
         visgod(year);
         }
@@ -94,8 +94,8 @@ public class Homework1 {
 
         //метод для задания 7
 
-        public static void name(String yourname) {
-            System.out.println("Привет, " + yourname + "!");
+        public static void name(String username) {
+            System.out.println("Привет, " + username + "!");
         }
 
         //метод для задания 8
@@ -106,7 +106,7 @@ public class Homework1 {
             } else if ((year % 100 == 0) && (year % 400 != 0)) {
                 System.out.println("Этот год не високосный!");
             } else if (year % 400 == 0) {
-                System.out.println("Этот год високосный");
+                System.out.println("Этот год високосный!");
             } else System.out.println("Этот год не високосный!");
         }
 }
