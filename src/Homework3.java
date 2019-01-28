@@ -22,7 +22,6 @@ public class Homework3 {
         int r = rand.nextInt(10);
         System.out.println("Угадай число, которое я загадал! >:)");
         Scanner gonnascan = new Scanner(System.in);
-        Scanner gonnascan1 = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
             System.out.print("Твое число: ");
             int n = gonnascan.nextInt();
@@ -31,10 +30,10 @@ public class Homework3 {
                 if (i==2) {
                     System.out.println("Ты проиграл!");
                     System.out.println("Сыграем еще? 1-да, 0-нет");
-                    int q1 = gonnascan1.nextInt();
+                    int q1 = gonnascan.nextInt();
                     while (q1 != 1 && q1 != 0) {
                         System.out.println("Нужно ввести 0 или 1!");
-                        q1 = gonnascan1.nextInt();
+                        q1 = gonnascan.nextInt();
                     }
                     if (q1 == 1) {
                         Homework3.guessnumb();
@@ -46,10 +45,10 @@ public class Homework3 {
             } else {
                 System.out.println("Угадал!");
                 System.out.println("Сыграем еще? 1-да, 0-нет");
-                int q = gonnascan1.nextInt();
+                int q = gonnascan.nextInt();
                 while ((q != 1) && (q != 0)) {
                     System.out.println("Нужно ввести 0 или 1!");
-                    q = gonnascan1.nextInt();
+                    q = gonnascan.nextInt();
                 }
                 if (q == 1) {
                     Homework3.guessnumb();
