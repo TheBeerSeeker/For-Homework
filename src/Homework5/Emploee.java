@@ -2,11 +2,11 @@ package Homework5;
 
 public class Emploee {
 
-    String name;
-    String position;
-    String email;
-    String mobile_number;
-    int salary;
+    private String name;
+    private String position;
+    private String email;
+    private String mobile_number;
+    private int salary;
     int age;
 
     public Emploee() {
